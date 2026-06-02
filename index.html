@@ -268,7 +268,7 @@
 
             <!-- Custom Interactive Button Interface -->
             <div class="flex flex-col sm:flex-row justify-center items-center gap-4 pt-4 max-w-lg mx-auto">
-                <a href="mailto:contact@ghadikhalil,com" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl transition-all duration-200 shadow-xl shadow-blue-900/30 group">
+                <a href="mailto:contact@ghadikhalil.com" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl transition-all duration-200 shadow-xl shadow-blue-900/30 group">
                     <i data-lucide="mail" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i> Send an Email
                 </a>
                 <button onclick="copyEmailToClipboard()" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-slate-900/80 hover:bg-slate-800 border border-slate-700/80 text-white font-bold rounded-xl transition-all duration-200">
@@ -297,7 +297,7 @@
     </div>
 
     <!-- Hidden input element for fallback clipboard mechanism -->
-    <input id="email-holder" type="text" value="ghadi.khalil.music@gmail.com" class="absolute -top-[9999px] left-[-9999px] hidden" readonly />
+    <input id="email-holder" type="text" value="contact@ghadikhalil.com" class="absolute -top-[9999px] left-[-9999px] hidden" readonly />
 
     <script>
         // Initialize Lucide vector icons
@@ -306,7 +306,7 @@
         // Safe legacy copy function optimized for iframe sandboxing environments
         function copyEmailToClipboard() {
             const tempInput = document.createElement("input");
-            tempInput.value = "ghadi.khalil.music@gmail.com";
+            tempInput.value = "contact@ghadikhalil.com";
             document.body.appendChild(tempInput);
             tempInput.select();
             tempInput.setSelectionRange(0, 99999); // Responsive mobile support
