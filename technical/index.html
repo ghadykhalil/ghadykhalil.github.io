@@ -1,1 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghadi Khalil | Solutions Consultant &amp; Cyber Security Expert</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
 
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: { deep: '#030712', card: '#0b1329', accent: '#2563eb', glow: '#60a5fa', ice: '#eff6ff' }
+                    },
+                    fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #030712;
+            background-image: 
+                radial-gradient(circle at 5% 15%, rgba(37, 99, 235, 0.1) 0%, transparent 45%),
+                radial-gradient(circle at 95% 85%, rgba(96, 165, 250, 0.06) 0%, transparent 40%);
+            background-attachment: fixed;
+        }
+        .glass-panel {
+            background: rgba(11, 19, 41, 0.7);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+        }
+        .glowing-border:hover {
+            border-color: rgba(96, 165, 250, 0.4);
+            box-shadow: 0 0 25px rgba(37, 99, 235, 0.2);
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-300 antialiased min-h-screen py-10 px-4 sm:px-6">
+
+    <div class="max-w-5xl mx-auto space-y-12">
+        
+        <!-- Navigation Back Link -->
+        <nav class="flex justify-between items-center border-b border-slate-900 pb-4">
+            <a href="../" class="inline-flex items-center gap-2 text-xs font-bold text-slate-400 hover:text-white transition">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i> Main Hub
+            </a>
+            <img src="../Logo.svg" alt="GK" class="w-8 h-8" style="filter: invert(1) brightness(200%);" onerror="this.style.display='none'">
+        </nav>
+
+        <!-- Profile Header -->
+        <header class="space-y-4">
+            <div class="inline-flex items-center gap-2 bg-blue-950/40 border border-blue-900/50 text-blue-300 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest">
+                <i data-lucide="terminal" class="w-3.5 h-3.5 animate-pulse"></i> Systems Architect &bull; Cyber Security Expert
+            </div>
+            <h1 class="text-4xl md:text-5xl text-white font-extrabold tracking-tight">Ghadi Khalil</h1>
+            <p class="text-lg text-blue-400 font-medium max-w-3xl">
+                Solutions Consultant specialized in optimization of industrial data systems, automated business logistics, machine learning threat frameworks, and penetration operations.
+            </p>
+        </header>
+
+        <!-- Core Fields Matrix -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <div class="glass-panel rounded-3xl p-6 space-y-4">
+                <div class="p-3 bg-blue-950/80 border border-blue-900/50 rounded-2xl w-fit text-blue-400">
+                    <i data-lucide="cpu" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-white text-lg font-bold">Solutions Consulting</h3>
+                <p class="text-sm text-slate-400 leading-relaxed">
+                    Analyzing large-scale business pipelines, scaling computing infrastructure, and managing end-to-end integration contracts for industrial firms.
+                </p>
+            </div>
+
+            <div class="glass-panel rounded-3xl p-6 space-y-4">
+                <div class="p-3 bg-blue-950/80 border border-blue-900/50 rounded-2xl w-fit text-blue-400">
+                    <i data-lucide="shield-alert" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-white text-lg font-bold">Cyber Security Labs</h3>
+                <p class="text-sm text-slate-400 leading-relaxed">
+                    Constructing advanced homelabs using Kali Linux to model secure networks, perform ethical penetration tests, and analyze active logs.
+                </p>
+            </div>
+
+            <div class="glass-panel rounded-3xl p-6 space-y-4">
+                <div class="p-3 bg-blue-950/80 border border-blue-900/50 rounded-2xl w-fit text-blue-400">
+                    <i data-lucide="brain-circuit" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-white text-lg font-bold">Machine Learning / IDS</h3>
+                <p class="text-sm text-slate-400 leading-relaxed">
+                    Engineering custom Intrusion Detection Systems powered by predictive machine learning algorithms to map and terminate malicious network payloads.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- Engineering Experience Details -->
+        <section class="glass-panel rounded-3xl p-6 md:p-8 space-y-6">
+            <h2 class="text-white text-xl font-bold flex items-center gap-2">
+                <i data-lucide="briefcase" class="text-blue-400"></i> Engineering Background
+            </h2>
+            <div class="space-y-6 border-l border-slate-800 pl-4 ml-2">
+                <div class="relative space-y-1">
+                    <div class="absolute -left-[21px] top-1.5 w-2.5 h-2.5 rounded-full bg-blue-500"></div>
+                    <h3 class="text-white font-bold text-base">Solutions Consultant &amp; System Implementation</h3>
+                    <p class="text-xs text-blue-400">Industrial Systems Integration</p>
+                    <p class="text-sm text-slate-400 leading-relaxed">Optimization of data flows, database scaling, and handling specialized professional tech operations for large-scale enterprise environments.</p>
+                </div>
+                <div class="relative space-y-1">
+                    <div class="absolute -left-[21px] top-1.5 w-2.5 h-2.5 rounded-full bg-slate-700"></div>
+                    <h3 class="text-white font-bold text-base">Master's Degree Candidate &bull; Software Engineering</h3>
+                    <p class="text-xs text-slate-400">Bachelor's Degree in Computer Science Completed</p>
+                    <p class="text-sm text-slate-400 leading-relaxed">Advanced mathematical frameworks, cloud infrastructure, algorithm development, and network behavioral logic patterns.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Contact CTA -->
+        <section class="glass-panel border-blue-900/50 rounded-3xl p-8 text-center space-y-6">
+            <div class="max-w-xl mx-auto space-y-3">
+                <h2 class="text-2xl text-white font-bold">Enterprise Consulting &amp; Engagements</h2>
+                <p class="text-sm text-slate-400 leading-relaxed">
+                    Seeking strategic tech advisory requests, systems engineering tasks, or security infrastructure defense optimizations.
+                </p>
+            </div>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 max-w-md mx-auto">
+                <a href="mailto:contact@ghadikhalil.com?to=contact@ghadikhalil.com" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl transition">
+                    <i data-lucide="mail" class="w-4 h-4"></i> Contact Consultant
+                </a>
+                <button onclick="copyTechEmail()" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 bg-slate-900 hover:bg-slate-800 border border-slate-700 text-white font-bold rounded-xl transition">
+                    <i data-lucide="copy" class="w-4 h-4"></i> Copy Email
+                </button>
+            </div>
+        </section>
+
+        <!-- System Notification Toast -->
+        <div id="tech-toast" class="fixed bottom-6 right-6 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none bg-blue-950 border border-blue-500 text-white py-3 px-5 rounded-2xl flex items-center gap-3 shadow-2xl">
+            <span class="bg-blue-900 text-blue-400 p-1.5 rounded-lg"><i data-lucide="check" class="w-4 h-4"></i></span>
+            <p class="text-sm font-bold">Consultant address copied to clipboard!</p>
+        </div>
+
+    </div>
+
+    <script>
+        lucide.createIcons();
+        function copyTechEmail() {
+            const el = document.createElement("input");
+            el.value = "contact@ghadikhalil.com";
+            document.body.appendChild(el); el.select(); el.setSelectionRange(0, 99999);
+            if(document.execCommand('copy')) {
+                const t = document.getElementById('tech-toast');
+                t.classList.remove('translate-y-20', 'opacity-0', 'pointer-events-none');
+                t.classList.add('translate-y-0', 'opacity-100');
+                setTimeout(() => {
+                    t.classList.add('translate-y-20', 'opacity-0', 'pointer-events-none');
+                    t.classList.remove('translate-y-0', 'opacity-100');
+                }, 3000);
+            }
+            document.body.removeChild(el);
+        }
+    </script>
+</body>
+</html>
