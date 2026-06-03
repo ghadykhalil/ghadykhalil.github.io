@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ghadi Khalil | Classical & Collaborative Pianist</title>
+    <title>Ghadi Khalil | Official Portal</title>
     
     <!-- Tailwind CSS for modern fluid styling -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -39,305 +39,85 @@
     </script>
     
     <style>
-        /* Smooth scrolling and glowing ambient backdrops */
-        html {
-            scroll-behavior: smooth;
-        }
         body {
             background-color: #030712;
             background-image: 
-                radial-gradient(circle at 5% 15%, rgba(37, 99, 235, 0.12) 0%, transparent 45%),
-                radial-gradient(circle at 95% 85%, rgba(96, 165, 250, 0.08) 0%, transparent 40%);
+                radial-gradient(circle at 20% 30%, rgba(37, 99, 235, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(96, 165, 250, 0.1) 0%, transparent 50%);
             background-attachment: fixed;
         }
-        
-        /* Subtle shimmer effects for active cards */
-        .glass-panel {
-            background: rgba(11, 19, 41, 0.7);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.06);
+        .glass-card {
+            background: rgba(11, 19, 41, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
         }
-        
-        .glowing-border:hover {
+        .glowing-card:hover {
             border-color: rgba(96, 165, 250, 0.4);
-            box-shadow: 0 0 25px rgba(37, 99, 235, 0.2);
-        }
-        
-        /* Custom scrollbar for desktop */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #030712;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #1e293b;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #3b82f6;
+            box-shadow: 0 0 30px rgba(37, 99, 235, 0.2);
         }
     </style>
 </head>
-<body class="font-sans text-slate-300 antialiased selection:bg-blue-600 selection:text-white min-h-screen py-10 md:py-20 px-4 sm:px-6">
+<body class="font-sans text-slate-300 antialiased min-h-screen flex flex-col justify-between p-6 sm:p-12">
 
-    <div class="max-w-5xl mx-auto space-y-12">
-        
-        <!-- Header & Main Profile Section -->
-        <header class="text-center space-y-4 mb-8">
-            <div class="inline-flex items-center gap-2 bg-blue-950/40 border border-blue-900/50 text-blue-300 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest">
-                <i data-lucide="music" class="w-3.5 h-3.5 animate-pulse"></i> Conservatory Virtuoso • Rock & Oriental Keys
-            </div>
-            <h1 class="font-serif text-5xl md:text-6xl text-white font-extrabold tracking-tight">
-                Ghadi Khalil
-            </h1>
-            <p class="text-lg md:text-xl text-blue-400 font-medium max-w-2xl mx-auto font-serif italic">
-                “Applying elite classical speed and discipline to the raw power of Rock and the rich modal tapestries of Oriental fusion.”
-            </p>
-            <div class="w-24 h-1 bg-gradient-to-r from-blue-600 to-blue-400 mx-auto rounded-full mt-4"></div>
-        </header>
-
-        <!-- Hero Showcase: Profile Picture and Biography -->
-        <section class="glass-panel rounded-3xl p-6 md:p-8 overflow-hidden glowing-border transition-all duration-300">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-                
-                <!-- Ghadi Playing the White Grand Piano (Visual Asset Showcase) -->
-                <div class="lg:col-span-5 space-y-3">
-                    <div class="relative group rounded-2xl overflow-hidden border border-slate-800 shadow-2xl">
-                        <img 
-                            src="Photo.jpeg" 
-                            alt="Ghadi Khalil playing a beautiful white grand piano" 
-                            class="w-full h-[320px] md:h-[400px] object-cover transition-transform duration-700 group-hover:scale-105"
-                            onerror="this.src='https://placehold.co/600x800/0b1329/eff6ff?text=Ghadi+Khalil+at+Piano'"
-                        />
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-90"></div>
-                        <div class="absolute bottom-4 left-4 right-4">
-                            <span class="text-white text-sm font-semibold tracking-wide flex items-center gap-1.5 drop-shadow-md">
-                                <i data-lucide="map-pin" class="w-4 h-4 text-blue-400"></i> Zad El Baher, Beirut
-                            </span>
-                        </div>
-                    </div>
-                    <p class="text-xs text-center text-slate-500 italic">Ghadi at the keys of the majestic white grand piano</p>
-                </div>
-
-                <!-- Biography & Focus -->
-                <div class="lg:col-span-7 space-y-6">
-                    <div class="flex items-center gap-2 text-white font-serif text-2xl md:text-3xl font-bold">
-                        <i data-lucide="user" class="text-blue-400"></i>
-                        <h2>Biography & Artistic Shift</h2>
-                    </div>
-                    
-                    <div class="space-y-4 text-base md:text-lg leading-relaxed text-slate-300">
-                        <p>
-                            Born in <strong class="text-white">Lebanon, Fakiha</strong>, my musical current took root at the age of 8. For nine intensive years, I honed my artistic expression and technical command under classical guidance at the prestigious <strong class="text-white underline decoration-blue-500 decoration-2">Lebanese National Higher Conservatory of Music</strong>, completing all critical academic years of study.
-                        </p>
-                        <p>
-                            While my youth was dedicated to mastering complex classical phrasing and mechanical structure, my vision has evolved. Traditional recitals are behind me; my true artistic drive is focused on channeling my powerhouse conservatory technique into <strong class="text-white">Rock and Oriental music</strong>.
-                        </p>
-                        <p>
-                            I bring an absolute command of key independence, rapid runs, and advanced harmony to live setups—aiming to elevate synth solos, progressive rock riffs, and microtonal oriental arrangements to a virtuosic level.
-                        </p>
-                    </div>
-
-                    <div class="flex flex-wrap gap-3 pt-2">
-                        <span class="bg-blue-950/60 border border-blue-900/60 text-blue-300 px-3 py-1 rounded-lg text-xs font-medium">9 Years Conservatory Engine</span>
-                        <span class="bg-blue-950/60 border border-blue-900/60 text-blue-300 px-3 py-1 rounded-lg text-xs font-medium">Rock Synthesizers & Keys</span>
-                        <span class="bg-blue-950/60 border border-blue-900/60 text-blue-300 px-3 py-1 rounded-lg text-xs font-medium">Oriental & Fusion Mastery</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Featured Performance Section with YouTube Player -->
-        <section id="repertoire" class="glass-panel rounded-3xl p-6 md:p-8 glowing-border transition-all duration-300 space-y-6">
-            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800 pb-4">
-                <div class="flex items-center gap-2.5">
-                    <i data-lucide="play-circle" class="text-blue-400 w-8 h-8 animate-pulse"></i>
-                    <div>
-                        <h2 class="text-white font-serif text-2xl font-bold">Proof of Technical Facility</h2>
-                        <p class="text-xs text-blue-400 tracking-wider uppercase mt-0.5">Franz Liszt — Liebestraum No. 3 (Love Dream)</p>
-                    </div>
-                </div>
-                <a href="https://youtu.be/qPCjWpXYItw" target="_blank" class="inline-flex items-center gap-2 text-xs font-bold text-white bg-blue-600 hover:bg-blue-500 transition-colors duration-200 px-4 py-2 rounded-xl shadow-lg shadow-blue-900/40">
-                    <i data-lucide="external-link" class="w-3.5 h-3.5"></i> Open in YouTube
-                </a>
-            </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-                <!-- Embedded Responsive Video Player -->
-                <div class="lg:col-span-7">
-                    <div class="relative w-full aspect-video rounded-2xl overflow-hidden bg-slate-950 border border-slate-800 shadow-2xl">
-                        <!-- Standard embedded player using the user's correct video key -->
-                        <iframe 
-                            class="absolute top-0 left-0 w-full h-full"
-                            src="https://www.youtube.com/embed/qPCjWpXYItw?modestbranding=1&rel=0" 
-                            title="Ghadi Khalil performing Liebestraum No.3 by Liszt" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                </div>
-
-                <!-- Technical Review of the Piece -->
-                <div class="lg:col-span-5 space-y-4">
-                    <div class="bg-blue-950/40 border border-blue-900/40 rounded-2xl p-5 space-y-3">
-                        <h3 class="font-serif text-lg text-white font-bold italic flex items-center gap-2">
-                            <i data-lucide="activity" class="text-blue-400 w-4 h-4"></i> Dexterity & Agility Peak
-                        </h3>
-                        <p class="text-sm leading-relaxed text-slate-300">
-                            Navigating Liszt's famous romantic masterwork represents the absolute pinnacle of my mechanical development. 
-                        </p>
-                        <p class="text-sm leading-relaxed text-slate-400">
-                            I share this performance to demonstrate the extreme hand independence, lightning-fast double cadenzas, and expressive touch that I now bring straight to modern synthesizer soundscapes and fast-tempo rock or oriental lines.
-                        </p>
-                        <div class="border-t border-slate-800/80 pt-3 flex items-center justify-between text-xs text-slate-400 font-mono">
-                            <span>Dexterity: Elite Level</span>
-                            <span class="text-blue-400">Tempo: Rubato Virtuosity</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Music Experience and Conservatory Credentials -->
-        <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            
-            <!-- Conservatoire & Classic Foundation -->
-            <div class="glass-panel rounded-3xl p-6 glowing-border transition-all duration-300 space-y-4">
-                <div class="flex items-center gap-3">
-                    <div class="p-2.5 bg-blue-950/80 rounded-2xl border border-blue-900/50">
-                        <i data-lucide="award" class="text-blue-400 w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-white text-xl font-serif font-bold">Classical Engine</h3>
-                </div>
-                <div class="space-y-3 text-sm text-slate-300">
-                    <div class="border-l-2 border-blue-500 pl-3 py-1 space-y-1">
-                        <h4 class="font-bold text-white">Lebanese National Higher Conservatory of Music</h4>
-                        <p class="text-xs text-blue-400">9-Year Classical Track (Ages 8–18)</p>
-                        <p class="text-slate-400">Completed preparatory curriculum, classical music syntax, and performance modules before branching out to modern synthesizers.</p>
-                    </div>
-                    <div class="border-l-2 border-slate-800 pl-3 py-1 space-y-1">
-                        <h4 class="font-bold text-slate-400">Modern Transition</h4>
-                        <p class="text-slate-500">Repurposing absolute pitch accuracy, intricate sight-reading capabilities, and speed mechanics to master synthesizers, Hammond organs, and oriental pitch-bending.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Band & Ensemble Practice -->
-            <div class="glass-panel rounded-3xl p-6 glowing-border transition-all duration-300 space-y-4">
-                <div class="flex items-center gap-3">
-                    <div class="p-2.5 bg-blue-950/80 rounded-2xl border border-blue-900/50">
-                        <i data-lucide="users" class="text-blue-400 w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-white text-xl font-serif font-bold">Ensemble Experience</h3>
-                </div>
-                <div class="space-y-3 text-sm text-slate-300">
-                    <div class="border-l-2 border-blue-500 pl-3 py-1 space-y-1">
-                        <h4 class="font-bold text-white">Live Performance & Keyboard setups</h4>
-                        <p class="text-xs text-blue-400">Active Band Member</p>
-                        <p class="text-slate-400">Extensive background operating keyboards inside multiple active live bands, blending complex classical timing with the raw energy of contemporary groups.</p>
-                    </div>
-                    <div class="border-l-2 border-slate-800 pl-3 py-1 space-y-1">
-                        <h4 class="font-bold text-slate-400">Creative Adaptability</h4>
-                        <p class="text-slate-500">Skilled in arranging layers, dynamic micro-adjustments during live sets, and blending seamlessly into a rhythm section.</p>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <!-- Collaboration Objectives & Call to Action (CTA) -->
-        <section class="relative overflow-hidden bg-gradient-to-br from-blue-950 via-brand-card to-slate-950 border border-blue-900/50 rounded-3xl p-8 md:p-10 text-center space-y-6">
-            <!-- Background floating glow element -->
-            <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-72 h-72 bg-blue-600/10 blur-[120px] pointer-events-none rounded-full"></div>
-            
-            <div class="max-w-2xl mx-auto space-y-4">
-                <div class="inline-flex items-center justify-center p-3 bg-blue-900/30 border border-blue-800/40 rounded-full mb-2">
-                    <i data-lucide="radio" class="w-8 h-8 text-blue-400 animate-pulse"></i>
-                </div>
-                <h2 class="font-serif text-3xl md:text-4xl text-white font-bold">Band Call: Rock & Oriental Projects</h2>
-                <p class="text-base md:text-lg text-slate-300 leading-relaxed">
-                    I am actively seeking to <strong class="text-white">join an established Rock or Oriental band</strong>, or team up with dedicated musicians to <strong class="text-white">start a new project</strong> from scratch. 
-                </p>
-                <p class="text-sm md:text-base text-blue-300/80 italic font-medium">
-                    Priority Goal: Actively looking to collaborate with a professional, talented music arranger to strategically elevate new projects as soon as possible.
-                </p>
-            </div>
-
-            <!-- Custom Interactive Button Interface -->
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 pt-4 max-w-lg mx-auto">
-                <a href="mailto:contact@ghadikhalil.com?to=contact@ghadikhalil.com" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl transition-all duration-200 shadow-xl shadow-blue-900/30 group">
-                    <i data-lucide="mail" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i> Send an Email
-                </a>
-                <button onclick="copyEmailToClipboard()" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-slate-900/80 hover:bg-slate-800 border border-slate-700/80 text-white font-bold rounded-xl transition-all duration-200">
-                    <i data-lucide="copy" class="w-4 h-4 text-slate-400"></i> Copy Contact Email
-                </button>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="text-center text-slate-600 py-10 space-y-2 border-t border-slate-900">
-            <p class="font-serif text-sm">Ghadi Khalil &bull; Classical Pianist</p>
-            <p class="text-xs font-mono">&copy; 2026. Handcrafted with precision.</p>
-        </footer>
-
-    </div>
-
-    <!-- Custom Micro-Notification Dialog for copying email (Replaces nasty browser alert dialogs) -->
-    <div id="toast-notification" class="fixed bottom-6 right-6 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none bg-blue-950 border border-blue-500 text-white py-3 px-5 rounded-2xl flex items-center gap-3 shadow-2xl z-50">
-        <span class="bg-blue-900 text-blue-400 p-1.5 rounded-lg">
-            <i data-lucide="check" class="w-4 h-4"></i>
-        </span>
-        <div>
-            <p class="text-xs text-slate-400 font-semibold uppercase tracking-wider">System Action</p>
-            <p class="text-sm font-bold">Email address copied to clipboard!</p>
+    <!-- Top Branding Header -->
+    <header class="text-center pt-8 space-y-3">
+        <div class="inline-block p-4 glass-card rounded-2xl mb-2">
+            <img src="Logo.svg" alt="Ghadi Khalil Logo" class="w-20 h-20 mx-auto" style="filter: invert(1) brightness(200%);" onerror="this.style.display='none'" />
         </div>
-    </div>
+        <h1 class="text-white text-3xl font-bold tracking-wider font-sans uppercase">Ghadi Khalil | غدي خليل</h1>
+        <p class="text-blue-400 text-xs font-mono uppercase tracking-widest">Dual-Domain Professional &bull; Tech &amp; Artistry</p>
+        <div class="w-16 h-0.5 bg-gradient-to-r from-blue-600 to-blue-400 mx-auto rounded-full"></div>
+    </header>
 
-    <!-- Hidden input element for fallback clipboard mechanism -->
-    <input id="email-holder" type="text" value="contact@ghadikhalil.com" class="absolute -top-[9999px] left-[-9999px] hidden" readonly />
+    <!-- Main Dual Split Portal Router -->
+    <main class="max-w-4xl w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 my-12">
+        
+        <!-- Left Box: Solutions Consultant & Cybersecurity -->
+        <a href="./technical/" class="glass-card glowing-card rounded-3xl p-8 group transition-all duration-300 flex flex-col justify-between text-left relative overflow-hidden">
+            <div class="absolute top-0 right-0 p-6 opacity-5 text-blue-500 group-hover:opacity-10 transition-opacity">
+                <i data-lucide="terminal" class="w-32 h-32"></i>
+            </div>
+            <div class="space-y-4 relative z-10">
+                <div class="p-3 bg-blue-950/80 border border-blue-900/50 rounded-xl inline-block text-blue-400">
+                    <i data-lucide="shield-check" class="w-6 h-6"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-white tracking-tight font-sans">Solutions Consultant &amp; Cyber Security</h2>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Enterprise software engineering, large-scale industrial solutions implementation, machine learning intrusion detection systems, and network penetration research.
+                </p>
+            </div>
+            <div class="pt-8 flex items-center gap-2 text-sm font-bold text-blue-400 group-hover:text-blue-300 transition-colors">
+                Explore Technical Domain <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
+            </div>
+        </a>
 
-    <script>
-        // Initialize Lucide vector icons
-        lucide.createIcons();
+        <!-- Right Box: Conservatory Virtuoso / Keyboardist -->
+        <a href="./musical/" class="glass-card glowing-card rounded-3xl p-8 group transition-all duration-300 flex flex-col justify-between text-left relative overflow-hidden">
+            <div class="absolute top-0 right-0 p-6 opacity-5 text-blue-400 group-hover:opacity-10 transition-opacity">
+                <i data-lucide="music-4" class="w-32 h-32"></i>
+            </div>
+            <div class="space-y-4 relative z-10">
+                <div class="p-3 bg-blue-950/80 border border-blue-900/50 rounded-xl inline-block text-blue-400">
+                    <i data-lucide="piano" class="w-6 h-6"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-white tracking-tight font-serif italic">Conservatory Virtuoso &amp; Keyboard Artist</h2>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    9 years of rigorous conservatory discipline and technical classical speed repurposed to drive high-energy live Rock setups and complex Oriental compositions.
+                </p>
+            </div>
+            <div class="pt-8 flex items-center gap-2 text-sm font-bold text-blue-400 group-hover:text-blue-300 transition-colors">
+                Explore Musical Domain <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
+            </div>
+        </a>
 
-        // Safe legacy copy function optimized for iframe sandboxing environments
-        function copyEmailToClipboard() {
-            const tempInput = document.createElement("input");
-            tempInput.value = "contact@ghadikhalil.com";
-            document.body.appendChild(tempInput);
-            tempInput.select();
-            tempInput.setSelectionRange(0, 99999); // Responsive mobile support
-            
-            try {
-                const successful = document.execCommand('copy');
-                if (successful) {
-                    showToastNotification();
-                } else {
-                    console.error('Fallback copy command failed.');
-                }
-            } catch (err) {
-                console.error('Fallback clipboard error: ', err);
-            }
-            document.body.removeChild(tempInput);
-        }
+    </main>
 
-        // Animated custom notifications
-        function showToastNotification() {
-            const toast = document.getElementById('toast-notification');
-            
-            // Bring element into focus and slide up
-            toast.classList.remove('translate-y-20', 'opacity-0', 'pointer-events-none');
-            toast.classList.add('translate-y-0', 'opacity-100');
-            
-            // Slide back down and fade after 3.5 seconds
-            setTimeout(() => {
-                toast.classList.add('translate-y-20', 'opacity-0', 'pointer-events-none');
-                toast.classList.remove('translate-y-0', 'opacity-100');
-            }, 3500);
-        }
-    </script>
+    <!-- Footer -->
+    <footer class="text-center text-slate-600 text-xs font-mono pb-4">
+        &copy; 2026 Ghadi Khalil. System architecture deployed with precision.
+    </footer>
+
+    <script>lucide.createIcons();</script>
 </body>
 </html>
